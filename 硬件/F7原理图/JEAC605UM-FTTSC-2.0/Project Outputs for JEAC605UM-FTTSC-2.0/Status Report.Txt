@@ -1,0 +1,10 @@
+Output: Tango Netlist
+Type  : TangoNetlist
+From  : Project [JEAC605UM-FTTSC-2.0.PRJPCB]
+   Generated File[JEAC605UM-FTTSC-2.NET]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 17:51:27 On 2012-5-25

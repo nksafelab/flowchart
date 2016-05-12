@@ -1,0 +1,8 @@
+Record=SheetSymbol|SourceDocument=MAIN.schdoc|Designator=CPU1|SchDesignator=CPU1|FileName=CPU1.schdoc|SymbolType=Normal|RawFileName=CPU1.schdoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=MAIN.schdoc|Designator=CPU2|SchDesignator=CPU2|FileName=CPU2.schdoc|SymbolType=Normal|RawFileName=CPU2.schdoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=MAIN.schdoc|Designator=CPU3|SchDesignator=CPU3|FileName=CPU3.schdoc|SymbolType=Normal|RawFileName=CPU3.schdoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=MAIN.schdoc|Designator=EPAPER|SchDesignator=EPAPER|FileName=EPAPER.schdoc|SymbolType=Normal|RawFileName=EPAPER.schdoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=MAIN.schdoc|Designator=MEMORY|SchDesignator=MEMORY|FileName=MEMORY.schdoc|SymbolType=Normal|RawFileName=MEMORY.schdoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=MAIN.schdoc|Designator=OTHER|SchDesignator=OTHER|FileName=OTHER.schdoc|SymbolType=Normal|RawFileName=OTHER.schdoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=MAIN.schdoc|Designator=POWER|SchDesignator=POWER|FileName=POWER.schdoc|SymbolType=Normal|RawFileName=POWER.schdoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=TopLevelDocument|FileName=MAIN.schdoc

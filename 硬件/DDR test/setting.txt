@@ -1,0 +1,82 @@
+Following is my description for  MMDC LPDDR2 connection for different setting.
+
+ 
+
+ 
+
+MX6D/Q support 64bit LPDDR2 only in  One channel mode.
+
+   NOTE:  here ¡°channel¡± means MMDC channel (controller number,defined in register MMDC_MDMISC: LPDDR2_2CH), not LPDDR2 channel (device number). 
+
+ 
+
+======================== detailed connection
+
+Connection:
+
+    Case 1: one device 32bit-LPDDR2 connected with  32bit-MMDC one channel:   MMDC setting: one channel -      MMDC_MDMISC : LPDDR2_2CH=0, 32bit mode
+
+               MMDC.CS0 -> LPDDR2.device0.CS  
+
+               MMDC.D[31:0] -> LPDDR2.device0. D[31:0]
+
+ 
+
+Case 2: two device 32bit-LPDDR2 connected with  32bit-MMDC one channel:   MMDC setting: one channel -      MMDC_MDMISC : LPDDR2_2CH=0, 32bit mode
+
+               MMDC.CS0 -> LPDDR2.device0.CS  
+
+               MMDC.D[31:0] -> LPDDR2.device0. D[31:0]
+
+ 
+
+               MMDC.CS1 -> LPDDR2.device1.CS 
+
+               MMDC.D[31:0] -> LPDDR2.device1. D[31:0]
+
+  
+
+Case 3: two device 32bit-LPDDR2 connected with  64bit-MMDC one channel:   MMDC setting: one channel -      MMDC_MDMISC : LPDDR2_2CH=0, 64bit mode
+
+               MMDC.CS0 -> LPDDR2.device0.CS  
+
+               MMDC.D[31:0] -> LPDDR2.device0. D[31:0]
+
+ 
+
+               MMDC.CS0 -> LPDDR2.device1.CS 
+
+               MMDC.D[63:32] -> LPDDR2.device1. D[31:0]
+
+ 
+
+Case 4: four device 32bit-LPDDR2 connected with  32bit-MMDC two channels:   MMDC setting: two channels -      MMDC_MDMISC : LPDDR2_2CH=1, 32bit mode 
+
+For MMDC channel 0 connection:
+
+1>     Device 0: lpddr2
+
+               MMDC. DRAM_SDBA0 -> LPDDR2.device0.CS 
+
+               MMDC.D[31:0] -> LPDDR2.device0. D[31:0]
+
+2>     Device 1: lpddr2
+
+               MMDC. DRAM_RAS -> LPDDR2.device1.CS
+
+               MMDC.D[31:0] -> LPDDR2.device1. D[31:0]
+
+  For MMDC channel 1 connection:
+
+1>     Device 0: lpddr2
+
+               MMDC. DRAM_A12 -> LPDDR2.device2.CS 
+
+               MMDC.D[63:32] -> LPDDR2.device2. D[31:0]
+
+2>     Device 1: lpddr2
+
+               MMDC. DRAM_A11 -> LPDDR2.device3.CS
+
+               MMDC.D[63:32] -> LPDDR2.device3. D[31:0]
+
